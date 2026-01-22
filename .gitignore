@@ -1,0 +1,15 @@
+## Samples
+*.in
+*.out
+
+## execution
+*.exe
+
+## binaries
+*.class
+*.exe
+*.bin
+
+## others
+*.xls
+*.doc

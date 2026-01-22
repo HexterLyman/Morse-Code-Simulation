@@ -1,0 +1,3 @@
+ENCODE_DECODE: 0
+ERROR_TYPE: 5
+Invalid Error_Type Input!

@@ -1,0 +1,77 @@
+image: gcc:13
+
+
+
+stages:
+
+ - build
+
+ - test
+
+
+
+build:
+
+ stage: build
+
+ script:
+
+  - make
+
+ artifacts:
+
+  paths:
+
+   - solution
+
+  expire_in: 1 hour
+
+
+
+test:
+
+ stage: test
+
+ dependencies:
+
+  - build
+
+ script:
+
+  - cd test
+
+  - chmod +x test_1/test_1.sh
+
+  - ./test_1/test_1.sh
+
+  - chmod +x test_2/test_2.sh
+
+  - ./test_2/test_2.sh
+
+  - chmod +x test_3/test_3.sh
+
+  - ./test_3/test_3.sh
+
+  - chmod +x test_4/test_4.sh
+
+  - ./test_4/test_4.sh
+
+  - chmod +x test_5/test_5.sh
+
+  - ./test_5/test_5.sh
+
+  - chmod +x test_6/test_6.sh
+
+  - ./test_6/test_6.sh
+
+  - chmod +x test_7/test_7.sh
+
+  - ./test_7/test_7.sh
+
+  - chmod +x test_8/test_8.sh
+
+  - ./test_8/test_8.sh
+
+  - chmod +x test_9/test_9.sh
+
+  - ./test_9/test_9.sh
