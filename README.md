@@ -14,7 +14,7 @@ This is a program to simulate a simplified transmission and receiving of morse-c
 ---
 
 ### How To Use
-1. Put your input (plain-text or morse-code) to `input.txt`
+1. Put your input (plain-text or morse-code) to `input.txt` (Make the .txt file first!)
 2. Compile the code with makefile
    ```
    make
